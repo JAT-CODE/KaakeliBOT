@@ -22,3 +22,5 @@ client.on('ready', () => {
 // application -> Bot -> Token
 
 client.login(token);
+
+//test
