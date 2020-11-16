@@ -1,5 +1,6 @@
-const Discord = require('discord.js')
-const client = new Discord.Client()
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const { token } = require('./config.json');
 
 client.on('ready', () => {
     console.log("Connected as " + client.user.tag)
@@ -20,6 +21,4 @@ client.on('ready', () => {
 // https://discordapp.com/developers/applications/
 // application -> Bot -> Token
 
-bot_secret_token = "Nzc3OTA2MDg1ODg0NzIzMjIy.X7KPfw.3FXxpcll1HGmXXa0qFr0DEa945E";
-
-client.login(bot_secret_token);
+client.login(token);
